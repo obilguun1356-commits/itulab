@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Exercise Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    /* HEADER */
+    .jumbotron {
+      background-color: #1a237e;
+      color: white;
+      padding: 80px 60px;
+      text-align: left;
+    }
+
+    .jumbotron h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .jumbotron p {
+      font-size: 18px;
+      margin: 10px 0 30px 0;
+    }
+
+    .btn-learn {
+      background-color: #ff007f;
+      color: white;
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    /* MAIN CONTENT */
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 60px;
+    }
+
+    .left {
+      width: 60%;
+    }
+
+    .right {
+      width: 35%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    /* MESSAGES */
+    .messages {
+      background-color: #ff007f;
+      color: white;
+      padding: 10px 15px;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .messages span.badge {
+      background-color: #1a237e;
+      color: white;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+
+    /* WELCOME CANDIDATE CARD */
+    .card {
+      background-color: #1a237e;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      color: white;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .card-header {
+      background-color: #b0b0b0;
+      color: #ffffff;
+      padding: 15px;
+    }
+
+    .card-body {
+      padding: 20px;
+      background-color: #0d1b5e;
+    }
+
+    .card-body input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      margin-bottom: 15px;
+      background-color: #2b3a99;
+      color: white;
+    }
+
+    .card-body button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff007f;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .card-footer {
+      background-color: #2b2b8f;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .card-footer a {
+      color: #ffffff;
+      font-size: 13px;
+      text-decoration: underline;
+    }
+
+    /* CAST YOUR VOTE BOX */
+    .vote-box {
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      padding: 20px;
+      color: #333;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+    }
+
+    .vote-box h4 {
+      margin-bottom: 12px;
+      color: #1a237e;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .vote-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: flex-start;
+    }
+
+    .vote-buttons button {
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 14px;
+      color: white;
+    }
+
+    .vote-buttons button:first-child {
+      background-color: #ff007f;
+    }
+
+    .vote-buttons button:last-child {
+      background-color: #25c991;
+    }
+
+    .vote-buttons button:hover {
+      opacity: 0.85;
+    }
+
+    /* FOOTER */
+    footer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #1a237e;
+      color: white;
+      padding: 15px 60px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="jumbotron">
+    <h1>Hello, world!</h1>
+    <p>Welcome to Bootstrap v3.3.7. Check out this awesome jumbotron!</p>
+    <a href="#" class="btn-learn">LEARN MORE</a>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <div class="left">
+      <h2>Heading goes here</h2>
+      <p>
+        Cupcake ipsum dolor sit amet caramels halvah soufflé sugar plum. 
+        Fruitcake lollipop tiramisu pastry halvah sweet lemon drops. 
+        Jelly beans marshmallow jujubes. Pudding macaroon chocolate cake chupa chups.
+      </p>
+      <iframe src="https://www.youtube.com/embed/GQ_JruM9DiA?start=1" allowfullscreen></iframe>
+    </div>
+
+    <div class="right">
+      <div class="messages">
+        ✉️ MESSAGES <span class="badge">3</span>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Welcome Candidate!</h2>
+        </div>
+        <div class="card-body">
+          <p>You are a Starfleet Academy candidate. Greet the Captain<br>in a <em>respectful</em> fashion.</p>
+          <input type="text" placeholder="Input your greeting..">
+          <button>SEND</button>
+        </div>
+        <div class="card-footer">
+          <a href="#">I don't watch Star Trek and don't get this reference</a>
+        </div>
+      </div>
+
+      <div class="vote-box">
+        <h4>Cast your vote! What do you think about space?<br>See vote progress bar below!</h4>
+        <div class="vote-buttons">
+          <button>COOL</button>
+          <button>LAME</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2017 All Rights Reserved, SomeCompany.
+  </footer>
+
+</body>
+</html>
